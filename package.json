@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "testJS",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlyaaRana/earthRevolution.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Alyaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlyaaRana/earthRevolution/issues"
+  },
+  "homepage": "https://github.com/AlyaaRana/earthRevolution#readme"
+}

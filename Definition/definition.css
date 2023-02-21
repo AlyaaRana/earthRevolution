@@ -11,7 +11,8 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
     /*background: linear-gradient(#000000, #636b8a, #1b1c20);*/
-    background: #c87bbb;
+    background: #F28444;
+    background-image: url("stars.png");
 }
 header{
     position: absolute;
@@ -52,7 +53,27 @@ header ul li a:hover{
     color: #2b1055;
 }
 
+/* orbit */
+.orbit-display{
+    display: block;
+    height: 1000px;
+    background-color: black;
+    background-image: url("black-stars-galaxy.png");
+}
+.orbit-contain img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding-top: 50px;
+    width: 75%;
+    
+}
+
 /*List */
+.list{
+    margin-top: 15rem;
+}
 .listImage{
   display: grid;
   align-items: center;
@@ -60,20 +81,96 @@ header ul li a:hover{
   justify-content: space-between;
   justify-items: center;
   margin-top: 3rem;
-  grid-template-columns: repeat(5,1fr);
+  margin-bottom: 10rem;
+  grid-template-columns: repeat(4,1fr);
+  color: rgb(59, 59, 59);
 }
 .list-img{
-  width: 150px;
+  width: 100px;
   object-fit: contain;
   opacity: 0.4;
   transition: var(--tran-0-5);
+  border: 5px solid black;
 }
 .list-img:hover{
     opacity: 1;
+}
+.list-content{
+    text-align: center;
+    font-size: 1.3em;
 }
 
 /*Content*/
 .content{
     position: absolute;
-    left: 50px;
+}
+.content-box-black{
+    background-color: #011C40;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: #F28444;
+}
+.content-box-gray{
+    background-color: #F28444;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: #011C40;
+}
+.isi{
+    margin-left: 50px;
+}
+.title{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 3rem;
+}
+.paragraph{
+    font-size: 1.2em;
+}
+.img-earth{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 50%;
+    max-width: 50%;
+    width: 50%;
+}
+
+.title-definisi-margin{
+    margin-left: 19em;
+}
+.paragraph-definisi-margin{
+    margin-left: 33em;
+}
+.title-nature{
+    text-align: center;
+    font-size: 1.3rem;
+    border-bottom: 2px solid;
+}
+.natureImage{
+    display: grid;
+    align-items: center;
+    column-gap: 2rem;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+    grid-template-columns: repeat(4,1fr);
+  }
+  .nature-img{
+    width: 300px;
+    height: 200px;
+    object-fit: fill;
+    opacity: 1;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+  .nature-content{
+    text-align: center;
+    font-size: 2em;
 }
