@@ -44,10 +44,13 @@ header ul li a{
     padding: 6px 15px;
     color: #fff;
     border-radius: 20px;
+    font-size: 1.2em;
+    text-shadow: 2px 2px #02008b;
 }
 header ul li a:hover{
     background: #fff;
-    color: #2b1055;
+    color: #02008b;
+    text-shadow: none;
 }
 section{
     position: relative;
@@ -79,17 +82,19 @@ section img{
 section img#moon{
     mix-blend-mode: screen;
 }
-section img#mountains_front{
+section img#earth_front{
     z-index: 10;
 
 }
 #text{
     right: -350px;
     position: absolute;
-    color: #fff;
+    color: #F5F5F5;
     white-space: nowrap;
     font-size: 7.5vw;
     z-index: 9;
+    -webkit-text-stroke: 2px #02008b;
+    text-shadow: 3px 3px #02008b;
 }
 .btn{
     text-decoration: none;
@@ -97,9 +102,15 @@ section img#mountains_front{
     padding: 8px 30px;
     border-radius: 40px;
     background: #fff;
-    color: #2b1055;
+    color: #02008b;
     font-size: 1.5em;
     transform: translateY(100px);
+    z-index: 11;
+    font-weight: 700;
+}
+.btn:hover{
+    background: #000000;
+    color: white;
 }
 .sec{
     position: relative;
