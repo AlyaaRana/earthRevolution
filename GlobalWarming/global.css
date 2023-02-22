@@ -11,7 +11,8 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
     /*background: linear-gradient(#000000, #636b8a, #1b1c20);*/
-    background: #c87bbb;
+    /*background: #a26767;*/
+    background-image: url("stars.png");
 }
 header{
     position: absolute;
@@ -50,4 +51,69 @@ header ul li a{
 header ul li a:hover{
     background: #fff;
     color: #2b1055;
+}
+
+/* orbit */
+.orbit-display{
+    display: block;
+    height: 1000px;
+    background-color: black;
+    background-image: url("stars.png");
+}
+.orbit-contain img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding-top: 50px;
+    width: 75%;
+    
+}
+
+/*List */
+.struktur{
+    margin-top: 30px;
+}
+.title{
+    text-align: center;
+    border-bottom: 2px solid;
+}
+.list{
+    margin-top: 5rem;
+}
+.listImage{
+  display: grid;
+  align-items: center;
+  column-gap: 2rem;
+  justify-content: space-between;
+  justify-items: center;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+  grid-template-columns: repeat(3,1fr);
+  color: rgb(59, 59, 59);
+}
+.listt{
+    display: grid;
+    align-items: center;
+    column-gap: 2rem;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+    grid-template-columns: repeat(2,1fr);
+    color: rgb(59, 59, 59);
+  }
+.list-img{
+  width: 100px;
+  object-fit: contain;
+  opacity: 0.4;
+  transition: var(--tran-0-5);
+  border: 5px solid black;
+}
+.list-img:hover{
+    opacity: 1;
+}
+.list-content{
+    text-align: center;
+    font-size: 1.3em;
 }
