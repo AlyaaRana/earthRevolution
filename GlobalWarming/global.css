@@ -35,9 +35,10 @@ body{
     color: #fff;
 }
 .container .card .slide {
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     transition: 0.5s;
+    overflow: scroll;
 }
 .container .card .slide.slide1 {
     position: relative;
