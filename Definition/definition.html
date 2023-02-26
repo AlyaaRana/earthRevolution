@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Definition</title>
     <link rel="stylesheet" type="text/css" href="definition.css">
+    <script defer src="script-definition.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -15,6 +16,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="Definition/definition.html">Definition</a></li>
             <li><a href="GlobalWarming/global.html">Global Warming</a></li>
+            <li><a href="#">About</a></li>
         </ul>
     </header>
     
@@ -25,12 +27,12 @@
             <img src="earth-sun-orbit-bg-remove.gif" class="orbit-img">
         </div>
     </div>
-    <section class="struktur">
+    <section class="struktur hidden">
         <div class="list">
             <div class="aboutList">
                 <div class="listImage">
                     <div class="list-content">
-                        <a href="#Definisi"><img src="info.png"alt="" class="list-img"></a>
+                        <a href="#Definisi"><img src="info-new.png"alt="" class="list-img"></a>
                         <h5>Definisi</h5>
                     </div>
                     <div class="list-content">
@@ -41,10 +43,6 @@
                         <a href="#Manfaat"><img src="welfare.png"alt="" class="list-img"></a>
                         <h5>Manfaat</h5>
                     </div>
-                    <div class="list-content">
-                        <a href="#Fenomena"><img src="rainbow.png"alt="" class="list-img"></a>
-                        <h5>Fenomena</h5>
-                    </div>
                 </div>
             </div>
         </div>
@@ -52,40 +50,42 @@
 
     <!-- Isi/content -->
     <section class="content">
-        <div id="Definisi" class="content-box-black">
-            <img class="img-earth" src="Earth-Rotation.jpg">
+        <div id="Definisi" class="content-definisi hidden">
             <article class="isi">
                 <div class="title title-definisi-margin">
-                    <h2>Pengertian Revolusi Bumi</h2>
+                    <h2 class="hidden">Pengertian Revolusi Bumi</h2>
                 </div>
                 <div class="paragraph paragraph-definisi-margin">
-                    <p>Revolusi bumi adalah perputaran bumi mengelilingi matahari.
+                    <p class="hidden">Revolusi bumi adalah perputaran bumi mengelilingi matahari.
                         <br><br>Semasa revolusi, poros bumi akan bergeser atau miring dengan arah yang sama kepada bidang ekliptika membentuk sudut 23,5° kepada matahari,
-                         sudut tersebut diukur dari garis imajiner yang menjalin antara kutub utara dengan kutub selatan yang disebut sumbu rotasi.<br>Proses revolusi bumi terjadi dalam durasi panjang yang diingat sebagai tahun.
-                         <br> Bumi membutuhkan durasi sekitar 365 hari untuk satu kali mengelilingi matahari atau melaksanakan revolusi bumi.
+                         sudut tersebut diukur dari garis imajiner yang menjalin antara kutub utara dengan kutub selatan yang disebut sumbu rotasi.
+                         Proses revolusi bumi terjadi dalam durasi panjang yang diingat sebagai tahun.
+                         Bumi membutuhkan durasi sekitar 365 hari untuk satu kali mengelilingi matahari atau melaksanakan revolusi bumi.
                     </p>
+                </div>
+                <div class="earth-big-img hidden">
+                    <img src="earth-smile.gif" alt="">
                 </div>
             </article>
         </div>
-        <div id="Akibat" class="content-box-gray">
+        <div id="Akibat" class="content-akibat hidden">
             <article class="isi">
-                <div class="title">
+                <div class="title hidden">
                     <h2>Akibat dari Revolusi Bumi</h2>
                 </div>
-                <div class="paragraph">
+                <div class="paragraph paragraph-akibat">
                     <ol type="1">
-                        <h4><li>Terjadinya gerak semu matahari</li></h4>
-                        <p>Gerak semu matahari merupakan posisi matahari yang berubah- ubah karena posisinya yang berganti.
-                            <br>Gerak semu matahari juga disebut sebagai gerak semu tahunan matahari.
-                            <br><br>Sebenarnya, gerak semu tahunan matahari merupakan pergeseran posisi matahari ke arah belahan bumi utara yang umumnya terjadi pada tanggal 22 Desember hingga 21 Juni.
-                            <br>Serta dari belahan bumi utara menuju ke belahan bumi selatan, yang terjadi pada tanggal 21 Juni hingga 21 Desember. <br>
+                        <h4 class="title-gap hidden"><li>Terjadinya gerak semu matahari</li></h4>
+                        <p class="hidden">Gerak semu matahari atau juga disebut gerak semu tahunan matahari merupakan posisi matahari yang berubah- ubah karena posisinya yang berganti.
+                            Sebenarnya, gerak semu tahunan matahari merupakan pergeseran posisi matahari ke arah belahan bumi utara yang umumnya terjadi pada tanggal 22 Desember hingga 21 Juni.
+                            Serta dari belahan bumi utara menuju ke belahan bumi selatan, yang terjadi pada tanggal 21 Juni hingga 21 Desember.
                             Peristiwa ini dinamakan sebagai gerak semu matahari, karena sebenarnya yang bergerak bukan lah matahari, melainkan Bumi yang melakukan revolusi dengan sumbu rotasi yang miring
                         </p>
                         <br><br><br><br>
-                        <h4><li>Terjadinya perbedaan waktu siang dan malam</li></h4>
+                        <h4 class="title-gap hidden"><li>Terjadinya perbedaan waktu siang dan malam</li></h4>
                         <ol type="a">
-                            <li>Antara 21 Maret - 23 September</li>
-                            <ul>
+                            <li class="hidden">Antara 21 Maret - 23 September</li>
+                            <ul class="hidden">
                                 <li>Kutub Utara berada di dekat matahari, sedangkan Kutub Selatan jauh dari matahari.</li>
                                 <li>Belahan bumi utara terpapar sinar matahari lebih lama dibandingkan dengan belahan bumi selatan.</li>
                                 <li>Matahari bergeser ke arah utara bumi.</li>
@@ -95,8 +95,8 @@
                                     <br>Sementara itu, beberapa daerah dekat Kutub Selatan mengalami malam selama 24 jam.</li>    
                             </ul>
                             <br><br>
-                            <li>Antara 23 September - 21 Maret</li>
-                            <ul>
+                            <li class="hidden">Antara 23 September - 21 Maret</li>
+                            <ul class="hidden">
                                 <li>Kutub Utara berada di dekat matahari, sedangkan Kutub Selatan jauh dari matahari.</li>
                                 <li>Belahan bumi selatan mendapatkan sinar matahari lebih lama dibandingkan dengan belahan bumi utara.</li>
                                 <li>Belahan bumi selatan mengalami siang yang lebih lama dibandingkan dengan belahan bumi utara.</li>
@@ -107,8 +107,8 @@
                                     <br> Pada tanggal tersebut, pengamat di khatulistiwa melihat matahari bergeser 23,5° ke arah selatan.</li>    
                             </ul>
                             <br><br>
-                            <li>Antara 21 Maret - 23 Desember</li>
-                            <ul>
+                            <li class="hidden">Antara 21 Maret - 23 Desember</li>
+                            <ul class="hidden">
                                 <li>Jarak matahari di Kutub Utara dengan Kutub Selatan adalah sama. </li>
                                 <li>Belahan bumi utara dan belahan bumi selatan menerima sinar matahari sama banyaknya.</li>
                                 <li>Seluruh permukaan bumi mengalami waktu siang dan malam sama lamanya.</li>
@@ -116,18 +116,18 @@
                             </ul>
                         </ol>
                         <br><br><br><br>
-                        <h4><li>Terjadinya perubahan musim di bumi</li></h4>
+                        <h4 class="title-gap hidden"><li>Terjadinya perubahan musim di bumi</li></h4>
                         <ol type="a">
-                            <li>Musim-musim di belahan bumi utara</li>
-                            <ul>
+                            <li class="hidden">Musim-musim di belahan bumi utara</li>
+                            <ul class="hidden">
                                 <li>Musim semi : 21 Maret – 21 Juni</li>
                                 <li>Musim panas : 21 Juni – 23 September</li>
                                 <li>Musim gugur : 23 September – 22 Desember</li>
                                 <li>Musim Dingin : 22 Desember – 21 Maret</li>
                             </ul>
                             <br><br>
-                            <li>Musim-musim di belahan bumi selatan </li>
-                            <ul>
+                            <li class="hidden">Musim-musim di belahan bumi selatan </li>
+                            <ul class="hidden">
                                 <li>Musim semi : 23 September – 22 Desember</li>
                                 <li>Musim panas : 22 Desember – 21 Maret</li>
                                 <li>Musim gugur : 21 Maret – 22 Juni</li>
@@ -135,16 +135,16 @@
                             </ul>
                         </ol>
                         <br><br><br><br>
-                        <h4><li>Perubahan rasi bintang</li></h4>
-                        <p>Rasi bintang sering diambil dengan garis hidup seseorang.
+                        <h4 class="title-gap hidden"><li>Perubahan rasi bintang</li></h4>
+                        <p class="hidden">Rasi bintang sering diambil dengan garis hidup seseorang.
                             <br>Ilmu yang mengamati disebut astrologi. <br>Terdapat sebagian manusia yang masih percaya dengan astrologi, 
                             akan tetapi sebagian orang tidak mempercayai astrologi karena berbeda pendapat dengan ilmu agama.<br>
                             Perbandingan bentuk rasi bintang kenyataannya karena lokasi kita sebagai peneliti di Bumi.<br>
                             Sehingga saat bumi mendapati pergerakan lokasi, maka kenyataannya rasi bintang juga akan berbeda.   
                         </p>
                         <br><br><br><br>
-                        <h4><li>Ditetapkannya Kalender Masehi </li></h4>
-                        <p>Revolusi bumi akan berpengaruh pada penetapan kalender masehi.
+                        <h4 class="title-gap hidden"><li>Ditetapkannya Kalender Masehi </li></h4>
+                        <p class="hidden">Revolusi bumi akan berpengaruh pada penetapan kalender masehi.
                             <br>Berdasar pada pembagian bujur, yakni bujur barat dan bujur timur maka ditetapkan bahwa batas penanggalan internasional adalah bujur 180 derajat<br>
                             Hal ini berakibat bahwa apabila di belahan timur bujur 180 derajat tanggal 10 maka di belahan barat bujur 180 derajat masing tanggal 9, seperti meloncat satu hari.
                             <br>perhitungan kalender masehi mengacu pada periode revolusi bumi yang mana satu tahun sama dengan 362, 25 hari
@@ -152,28 +152,30 @@
                     </ol>
                 </div>
         </div>
-        <div id="Manfaat" class="content-box-black">
+        <div id="Manfaat" class="content-manfaat hidden">
             <article class="isi">
                 <div class="title">
-                    <h2 class="title">Manfaat dari Revolusi Bumi</h2>
+                    <h2 class="title hidden">Manfaat dari Revolusi Bumi</h2>
                 </div>
-                <div class="paragraph">
+                <div class="paragraph paragraph-manfaat">
                     <ol type="1">
-                        <h4><li>Kita dapat merasakan pergantian musim</li></h4>
-                        <p>Masing- masing musim mempunyai kekhasan tersendiri yang pastinya akan mempengaruhi keadaan lingkungan.
+                        <h4 class="title-gap hidden"><li>Kita dapat merasakan pergantian musim</li></h4>
+                        <p class="hidden">Masing- masing musim mempunyai kekhasan tersendiri yang pastinya akan mempengaruhi keadaan lingkungan.
                             <br>Misalnya saja musim panas. Ketika musim panas kita akan merasakan sinar matahari begitu terik dan suhu akan terasa sangat panas.
                             <br> Kemudian ketika musim gugur tiba kita akan menjumpai banyak pohon- pohon yang menggugurkan daunnya sehingga lingkungan tampak berwarna kuning kecoklatan.
                             <br>Ketika musim dingin tiba, kita akan merasakan udara yang dingin menusuk tulang dan kita lihat salju turun dimana- mana.
                             <br>Selain itu ketika musim semi, kita akan menjumpai pohon- pohon mulai bersemi dan bunga- bunga bermekaran. Udara juga mulai hangat.
                         </p>
-                        <h4><li>Kita bisa melihat berbagai macam bentuk rasi bintang</li></h4>
-                        <p>Dengan adanya rasi bintang yang berbeda- beda ini maka timbullah yang namanya zodiak. <br>
+                        <br><br>
+                        <h4 class="title-gap hidden"><li>Kita bisa melihat berbagai macam bentuk rasi bintang</li></h4>
+                        <p class="hidden">Dengan adanya rasi bintang yang berbeda- beda ini maka timbullah yang namanya zodiak. <br>
                             Zodiak dipercaya dapat digunakan untuk menentukan nasib seseorang berdasarkan tanggal lahirnya.
                             <br> Dengan demikian mereka bisa lebih waspada atau mengetahui tentang persoalan yang akan dia hadapi.
                             <br>Terlepas hal ini benar atau tidak, namun astrologi (ilmu yang mempelajari mengenai peramalan nasib berdasarkan rasi bintang) ini dapat dijadikan hiburan, dan bahkan sebagai sumber mata pencaharian bagi para peramal.
                         </p>
-                        <h4><li>Kita mempunyai satuan waktu yang pasti</li></h4>
-                        <p>Manfaat yang sangat besar yang kita rasakan dari adanya revolusi bumi adalah yang berkaitan dengan waktu atau penanggalan
+                        <br><br>
+                        <h4 class="title-gap hidden"><li>Kita mempunyai satuan waktu yang pasti</li></h4>
+                        <p class="hidden">Manfaat yang sangat besar yang kita rasakan dari adanya revolusi bumi adalah yang berkaitan dengan waktu atau penanggalan
                             <br>Hingga era sekarang ini, kita menggunakan penanggalan yang disebut penanggalan Masehi.Penanggalan Masehi ini didasarkan pada revolusi bumi terhadap matahari. 
                             <br>Satuan terbesar dalam penanggalan ini adalah tahun. Satu tahun masehi periodenya adalah satu kali revolusi Bumi, yakni sekitar 365 hari.
                             <br>dengan adanya tahun ini, kita juga mengenal bulan dan tanggal sebagai satuan waktu yang lebih kecil. Sehingga untuk memecahkan problematika waktu sudah dapat dicapai.
@@ -181,7 +183,7 @@
                     </ol>
                 </div>
         </div>
-        <div id="Fenomena" class="content-box-gray">
+        <!-- <div id="Fenomena" class="content-box-gray">
             <article class="isi">
                 <div class="title">
                     <h2>Fenomena Alam yg Terbentuk dari Revolusi Bumi</h2>
@@ -219,7 +221,7 @@
                     </div>
                 </div>
             </article>
-        </div>
+        </div> -->
         
     </section>
     
