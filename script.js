@@ -1,39 +1,23 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    grabCursor: true,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+$(window).scroll(function(){
+  var windowScroll = $(this).scrollTop();
+
+  $('.logo').css({
+    'transform': 'translate(0px, '+ windowScroll +'%)'
+  });
+  $('.btn').css({
+    'transform': 'translate( 0px,'+ windowScroll*1.05 +'px)'
   });
 
-let stars = document.getElementById('stars');
-let sun = document.getElementById('sun');
-let earth_front = document.getElementById('earth_front');
-let text = document.getElementById('text');
-let btn = document.getElementById('btn');
+  $('#stars').css({
+    'transform': 'translate( '+ windowScroll*0.25 +'px,0px)'
+  });
 
-window.addEventListener('scroll', function(){
-  let value = window.scrollY;
-  stars.style.top = value * 0.5 + 'px';
-  sun.style.top = value * 0.5 + 'px';
-  earth_front.style.top = value * 0.5 + 'px';
-  text.style.marginRight = value * 4 * 'px';
-})
+  $('#sun').css({
+    'transform': 'translate( '+ windowScroll*0.7 +'px,0px)'
+  });
 
-window.onscroll = function(){
-  textScrollFunction()
-}
-
-function textScrollFunction() {
-  if (window.scrollY > 10) {
-    document.getElementById("text").style.right = "5px";
-  }
-}
-
-console.log(stars)
+  $('#earth_front').css({
+    'transform': 'translate( '+ -windowScroll*0.7 +'px,0px)'
+  });
+  
+});
