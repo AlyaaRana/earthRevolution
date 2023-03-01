@@ -167,3 +167,48 @@ section img#earth_front{
     }
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.911);
+  transition: 0.3s;
+  height: 60px;
+  text-align: center;
+}
+.listCard{
+display: grid;
+  align-items: center;
+  column-gap: 4rem;
+  justify-content: space-between;
+  justify-items: center;
+  margin-top: 4rem;
+  margin-bottom: 20rem;
+  grid-template-columns: repeat(3,1fr);
+}
+.listCard2{
+    display: grid;
+  align-items: center;
+  column-gap: 4rem;
+  justify-content: space-between;
+  justify-items: center;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  grid-template-columns: repeat(4,1fr);
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(63, 60, 60, 0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+  height: 300px;
+}
+
+.container {
+  padding: 2px 16px;
+}
+h4{
+    color: #fff;
+}
+.black-block{
+    height: 100px;
+    color: #000000;
+}
